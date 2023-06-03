@@ -1,0 +1,165 @@
+=<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>New WebXR Scene</title>
+    <script src='aframe.min.js'>
+    </script>
+	     <script>
+	     	
+	AFRAME.registerComponent('cursor-listener', {
+ 
+init: function () {
+
+this.el.addEventListener('click', function (evt) {
+
+console.log('Click on: ', evt.detail.intersection.object.el.id, ' listened by cursor');
+	if (evt.detail.intersection.object.el.id == 'camila')
+	{
+		if (document.getElementById('msg-1').style.display=='none')
+		{
+			document.getElementById('msg-1').style.display='block';
+		}
+	  else if (document.getElementById('msg-1').style.display=='block')
+	           {
+			      document.getElementById('msg-1').style.display=='none';
+	  
+				}
+	}
+
+	if (evt.detail.intersection.object.el.id == 'iliovasilema')
+	{
+		if (document.getElementById('msg-2').style.display=='none')
+		{
+			document.getElementById('msg-2').style.display='block';
+		}
+	  else if (document.getElementById('msg-2').style.display=='block')
+	           {
+			      document.getElementById('msg-2').style.display=='none';
+	  
+				}
+	}
+
+   });
+}
+});
+
+			
+	       </script
+
+</head>
+
+
+
+
+<body> 
+    <div id="msg-1" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	     Jericho,2023
+	   </p>
+	   </div>
+	   
+	   
+	    <div id="msg-2" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:white; background-color:grey;"> 
+	     abg
+	   </p>
+	   </div>
+	   
+	
+
+    <a-scene>
+   <a-sky color="lightblue"></a-sky>
+   <a-plane position='-15 1 5.2' rotation='-90 0 0' height='29.6' width='50'  shadow='receive: true' material="src:patoma2.jpg;">
+    </a-plane>
+			<a-entity id="player" camera wasd-controls look-controls="pointerLockEnabled:true"  position="0 4 0" rotation="0 90 0">
+				<a-entity id="ray" cursor-listener cursor="fuse: false; fuseTimeout: 1500; " position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: blue; shader: flat">
+				</a-entity>
+			</a-entity>
+			
+     <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="5 12 -9" rotation="-90 0 0" ></a-entity>
+   
+   
+     <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-5 12 -9" rotation="-90 0 0" ></a-entity>
+	
+	
+	 <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-15 12 -9" rotation="-90 0 0" ></a-entity>
+	
+	
+	 <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-25 12 -9" rotation="-90 0 0" ></a-entity>
+	
+	
+	 <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-35 12 -9" rotation="-90 0 0" ></a-entity>
+         
+		
+		
+		<a-light type="ambient" intensity='5' color="#222" ></a-light>
+     
+	 
+ 	 <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="5 13 19" rotation="-90 0 0" ></a-entity>
+    
+	
+	 <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-5 13 19" rotation="-90 0 0" ></a-entity>
+
+
+     <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-15 13 19" rotation="-90 0 0" ></a-entity>
+
+
+     <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-25 13 19" rotation="-90 0 0" ></a-entity>
+
+
+     <a-entity light="type: spot; intesity: 0.30; shadowCameraVisible: true; angle: 20" position="-35 13 19" rotation="-90 0 0" ></a-entity>
+  
+  
+  
+   
+  <a-box height='11' width='30' depth='0.2' position="10 6.3 5" rotation='0 -91 0'  material="src:tapetsaria.jpg;" >
+  </a-box>
+  
+    <a-box height='11' width='50.3' depth='0.2' position="-15 6.3 -9.7" material="src:tapetsaria.jpg;" >
+  </a-box>
+  
+   <a-box height='11' width='30' depth='0.2' position="-40 6.3 5" rotation='0 90 0'  material="src:tapetsaria.jpg;" >
+  </a-box>
+  
+   <a-box height='11' width='49.8' depth='0.2' position="-15 6.4 20"  material="src:tapetsaria.jpg;">
+  </a-box>
+  
+     <a-box id="camila" height='6.5' width='5' depth='0.7' position="-15 6.3 -9.7"  material="src:camila.jpg;" >
+  </a-box>
+  
+   <a-box id="iliovasilema" height='9' width='5' depth='0.6' position="-5 6.3 -9.7" class="collidable" material="src:iliovasilema.jpg;">
+  </a-box>
+  
+    <a-box height='6.5' width='5' depth='0.6' position="5 6.3 -9.7" material="src:dentroxioni.jpg;">
+  </a-box>
+  
+    <a-box height='6.5' width='5' depth='0.6' position="-25 6.3 -9.7" material="src:foto1.jpg;">
+  </a-box>
+  
+   <a-box height='6.5' width='5' depth='0.6' position="-35 6.3 -9.7" material="src:foto5.jpg;">
+  </a-box>
+  
+    <a-box height='5' width='9' depth='0.6' position="-40 6.3 5" rotation='0 90 0'  material="src:parathiro.jpg;">
+  </a-box>
+  
+   <a-box height='6.5' width='5' depth='0.6' position="-15 6.3 20" material="src:photo1.jpg;" >
+  </a-box>
+  
+    <a-box height='6.5' width='5' depth='0.6' position="-5 6.3 20" material="src:photo2.jpg;" >
+  </a-box>
+  
+   <a-box height='6.5' width='5' depth='0.6' position="5 6.3 20" material="src:photo3.jpg;" >
+  </a-box>
+  
+   <a-box height='6.5' width='5' depth='0.6' position="-25 6.3 20" material="src:photo4.jpg;" >
+  </a-box>
+  
+   <a-box height='6.5' width='5' depth='0.6' position="-35 6.3 20" material="src:photo5.jpg;" >
+  </a-box>
+  
+  
+			
+   </a-scene>
+</body>
+</html>
