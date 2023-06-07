@@ -1,0 +1,331 @@
+=<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>New WebXR Scene</title>
+    <script src='aframe.min.js'>
+    </script>
+	     <script>
+	     	
+	AFRAME.registerComponent('cursor-listener', {
+ 
+init: function () {
+
+this.el.addEventListener('click', function (evt) {
+
+console.log('Click on: ', evt.detail.intersection.object.el.id, ' listened by cursor');
+
+let messages = document.getElementsByClassName('messages');
+for (let i = 0; i < messages.length; i++)
+{
+	messages[i].style.display = 'none';
+	console.log('Hide previous messages');
+}
+
+
+	if (evt.detail.intersection.object.el.id == 'camila')
+	{
+		if (document.getElementById('msg-1').style.display=='none')
+		{
+			document.getElementById('msg-1').style.display='block';
+		}
+	  else if (document.getElementById('msg-1').style.display=='block')
+	           {
+			      document.getElementById('msg-1').style.display=='none';
+	  
+				}
+	}
+
+	if (evt.detail.intersection.object.el.id == 'iliovasilema')
+	{
+		if (document.getElementById('msg-2').style.display=='none')
+		{
+			document.getElementById('msg-2').style.display='block';
+		}
+	  else if (document.getElementById('msg-2').style.display=='block')
+	           {
+			      document.getElementById('msg-2').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'dentroxioni')
+	{
+		if (document.getElementById('msg-3').style.display=='none')
+		{
+			document.getElementById('msg-3').style.display='block';
+		}
+	  else if (document.getElementById('msg-3').style.display=='block')
+	           {
+			      document.getElementById('msg-3').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'kantouni')
+	{
+		if (document.getElementById('msg-4').style.display=='none')
+		{
+			document.getElementById('msg-4').style.display='block';
+		}
+	  else if (document.getElementById('msg-4').style.display=='block')
+	           {
+			      document.getElementById('msg-4').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'kerkyra')
+	{
+		if (document.getElementById('msg-5').style.display=='none')
+		{
+			document.getElementById('msg-5').style.display='block';
+		}
+	  else if (document.getElementById('msg-5').style.display=='block')
+	           {
+			      document.getElementById('msg-5').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'giannena')
+	{
+		if (document.getElementById('msg-6').style.display=='none')
+		{
+			document.getElementById('msg-6').style.display='block';
+		}
+	  else if (document.getElementById('msg-6').style.display=='block')
+	           {
+			      document.getElementById('msg-6').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'toulipa')
+	{
+		if (document.getElementById('msg-7').style.display=='none')
+		{
+			document.getElementById('msg-7').style.display='block';
+		}
+	  else if (document.getElementById('msg-7').style.display=='block')
+	           {
+			      document.getElementById('msg-7').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'alogo')
+	{
+		if (document.getElementById('msg-8').style.display=='none')
+		{
+			document.getElementById('msg-8').style.display='block';
+		}
+	  else if (document.getElementById('msg-8').style.display=='block')
+	           {
+			      document.getElementById('msg-8').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'topio')
+	{
+		if (document.getElementById('msg-9').style.display=='none')
+		{
+			document.getElementById('msg-9').style.display='block';
+		}
+	  else if (document.getElementById('msg-9').style.display=='block')
+	           {
+			      document.getElementById('msg-9').style.display=='none';
+	  
+				}
+	}
+	if (evt.detail.intersection.object.el.id == 'mpouketo')
+	{
+		if (document.getElementById('msg-10').style.display=='none')
+		{
+			document.getElementById('msg-10').style.display='block';
+		}
+	  else if (document.getElementById('msg-10').style.display=='block')
+	           {
+			      document.getElementById('msg-10').style.display=='none';
+	  
+				}
+	}
+	
+   });
+}
+});
+
+			
+	       </script
+
+</head>
+
+
+
+
+<body> 
+    <div id="msg-1" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	   
+		Jericho,2023
+	   </p>
+	   </div>
+	   
+	   
+	    <div id="msg-2" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		Metsovo,2022
+	   </p>
+	   </div>
+	   
+	     <div id="msg-3" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Katara Metsovo,2022
+	   </p>
+	   </div>
+	    
+		<div id="msg-4" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Corfu,2023
+	   </p>
+	   </div>
+	   
+	   <div id="msg-5" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Corfu,2019
+	   </p>
+	   </div>
+	   
+	    <div id="msg-6" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Ioannina,2018
+	   </p>
+	   </div>
+	   
+	    <div id="msg-7" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Pramanta,2019
+	   </p>
+	   </div>
+	   
+	   <div id="msg-8" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Aoos Lake,2019
+	   </p>
+	   </div>
+	   
+	    <div id="msg-9" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Metsovo,2020
+	   </p>
+	   </div>
+	   
+	<div id="msg-10" class="messages" style="display:none; position:absolute; bottom:40px; left:45%; margin:auto; z-index:1;">
+	   <p style="font-size:40px; color:grey; background-color:black;"> 
+	    
+		 Aoos Lake,2023
+	   </p>
+	   </div>
+	   
+	
+
+    <a-scene>
+   <a-sky color="lightblue"></a-sky>
+   <a-plane position='-15 1 5.2' rotation='-90 0 0' height='29.6' width='50'  shadow='receive: true' material="src:patoma2.jpg;">
+    </a-plane>
+			<a-entity id="player" camera wasd-controls look-controls="pointerLockEnabled:true;"  position="0 4 0" rotation="0 90 0">
+				<a-entity id="ray" cursor-listener cursor="rayOrigin:mouse;" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: blue; shader: flat">
+				</a-entity>
+			</a-entity>
+			
+     <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="5 12 -9" rotation="-90 0 0" ></a-entity>
+   
+   
+     <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-5 12 -9" rotation="-90 0 0" ></a-entity>
+	
+	
+	 <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-15 12 -9" rotation="-90 0 0" ></a-entity>
+	
+	
+	 <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-25 12 -9" rotation="-90 0 0" ></a-entity>
+	
+	
+	 <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-35 12 -9" rotation="-90 0 0" ></a-entity>
+         
+		
+		
+		<a-light type="ambient" intensity='5' color="#222" ></a-light>
+     
+	 
+ 	 <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="5 13 19" rotation="-90 0 0" ></a-entity>
+    
+	
+	 <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-5 13 19" rotation="-90 0 0" ></a-entity>
+
+
+     <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-15 13 19" rotation="-90 0 0" ></a-entity>
+
+
+     <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-25 13 19" rotation="-90 0 0" ></a-entity>
+
+
+     <a-entity light="type: spot; intensity: 0.30; shadowCameraVisible: false; angle: 20" position="-35 13 19" rotation="-90 0 0" ></a-entity>
+  
+  
+  
+   
+  <a-box height='11' width='30' depth='0.2' position="10 6.3 5" rotation='0 -91 0'  material="src:tapetsaria.jpg;" >
+  </a-box>
+  
+    <a-box height='11' width='50.3' depth='0.2' position="-15 6.3 -9.7" material="src:tapetsaria.jpg;" >
+  </a-box>
+  
+   <a-box height='11' width='30' depth='0.2' position="-40 6.3 5" rotation='0 90 0'  material="src:tapetsaria.jpg;" >
+  </a-box>
+  
+   <a-box height='11' width='49.8' depth='0.2' position="-15 6.4 20"  material="src:tapetsaria.jpg;">
+  </a-box>
+  
+     <a-box id="camila" height='6.5' width='5' depth='0.5' position="-15 6.3 -9.7"  material="src:camila.jpg;" >
+  </a-box>
+  
+   <a-box id="iliovasilema" height='6.5' width='5' depth='0.5' position="-5 6.3 -9.7"  material="src:iliovasilema.jpg;">
+  </a-box>
+  
+    <a-box id="dentroxioni" height='6.5' width='5' depth='0.5' position="5 6.3 -9.7" material="src:dentroxioni.jpg;">
+  </a-box>
+  
+    <a-box id="kantouni" height='6.5' width='5' depth='0.5' position="-25 6.3 -9.7" material="src:kantouni.jpg;">
+  </a-box>
+  
+   <a-box id="kerkyra" height='6.5' width='5' depth='0.5' position="-35 6.3 -9.7" material="src:kerkyra.jpg;">
+  </a-box>
+  
+    <a-box height='11' width='19' depth='0.6' position="-40 6.3 5" rotation='0 90 0'  material="src:parathiro2.jpg;">
+  </a-box>
+  
+   <a-box id="giannena" height='6.5' width='5' depth='0.5' position="-15 6.3 20" material="src:giannena.jpg;" >
+  </a-box>
+  
+    <a-box id="toulipa" height='6.5' width='5' depth='0.6' position="-5 6.3 20" material="src:toulipa.jpg;" >
+  </a-box>
+  
+   <a-box id="alogo" height='6.5' width='5' depth='0.6' position="5 6.3 20" material="src:alogo.jpg;" >
+  </a-box>
+  
+   <a-box id="topio"   height='6.5' width='5' depth='0.6' position="-25 6.3 20" material="src:topio.jpg;" >
+  </a-box>
+  
+   <a-box id="mpouketo" height='6.5' width='5' depth='0.6' position="-35 6.3 20" material="src:mpouketo.jpg;" >
+  </a-box>
+  
+   <a-box height='7.3' width='4' depth='0.2' position="9.7 4.5 5" rotation='0 90 0' color="grey">
+  </a-box>
+  
+  
+			
+   </a-scene>
+</body>
+</html>
